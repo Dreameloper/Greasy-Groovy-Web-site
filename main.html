@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <title>Hello GG</title>
+   
+   <link rel="stylesheet" type="text/css" href="css/main.css">
+   
+</head>
+<body>
+   <script type="text/javascript" src="js/slider.js"></script>
+  
+  
+   <header>
+      <!--검색창과 로고와 광고를 포함-->
+      <div id="top">
+         <!--플레이스 홀더 자동 업데이트 기능 구현 필요-->
+         <input type="search" name="search" placeholder="검색하시오!"> 
+         <p class="logo">greasy groovy</p>
+      </div>
+      
+      <!--GNB메뉴 박스-->
+      <nav id="gnb">
+         <ul>
+            <li><p><a herf="#">장르별 찾기</a></p></li>
+            <li><p><a herf="#">오늘의 추천</a></p></li>
+            <li><p><a herf="#">EVENT</a></p></li>
+            <li><p><a herf="#">굿즈&#8226;MD</a></p></li>
+            <li><p><a herf="#">공연정보</a></p></li>
+            <li><p><a herf="#">커뮤니티</a></p></li>
+         </ul>
+      </nav>
+      
+      <!--광고 상단 배너 부분-->
+      <div id="banner">
+         <button class="button_slider_left" onclick="plusDivs(-1);">&#10094;</button>
+         <div class="add_text">가나다라마바사</div>
+         <!--js로 만들어서 보관할 필요 있음. 유지보수-->
+         <div class="add_img">
+            <img class="mySlides" src="./images/banner_jorjasmith1.PNG">
+            <img class="mySlides" src="./images/banner_koreanjazz.PNG">
+            <img class="mySlides" src="./images/banner_morganlee.PNG">
+            <img class="mySlides" src="./images/banner_Official.PNG">
+         </div>
+         <button class="button_slider_right" onclick="plusDivs(+1);">&#10095;</button>
+      </div>
+   </header>
+   
+   <!--판매정보, 차트, footer-->
+   <div id="wrapper">
+      <!--판매정보-->
+      <div id="content">
+         <section class="items new">
+            <h1 class="items_title">NEW</h1>
+            <div class="item 01"></div>   
+            <div class="item 01"></div>   
+            <div class="item 01"></div>   
+         </section>
+         <h2 class="more">+more</h2>
+         
+         <section class="items best">
+            <h1 class="items_title">BEST</h1>
+            <div class="item 01"></div>   
+            <div class="item 01"></div>   
+            <div class="item 01"></div>
+            <div class="item 01"></div>
+            <div class="item 01"></div>
+            <div class="item 01"></div>
+         </section>
+         <h2 class="more">+more</h2>
+      </div>
+      
+      <!--차트-->
+      <div id="chart">
+         <ul>
+            <!--JS필요-->
+            <h1 class="chart_title">chart</h1>
+            <li>가나다라마바사</li>
+            <li>가나다라마바사</li>
+            <li>가나다라마바사</li>
+            <li>가나다라마바사</li>
+            <li>가나다라마바사</li>
+            <li>가나다라마바사</li>
+            <li>가나다라마바사</li>
+            <li>가나다라마바사</li>
+         </ul>
+      </div>
+      
+      <!--footer-->
+      <footer>
+         <img class="fbook" src="./images/icon_facebook.png" alt="facebook">
+         <img class="insta" src="./images/icon_instagram.png" alt="instagram">
+         <img class="kakao" src="./images/icon_kakao.png" alt="kakaoplus">
+         <div></div>
+         <div></div>
+         <div></div>
+      </footer>   
+   </div> <!--wrapper 끝-->
+   
+   <!--계정 및 미리듣기 utility-->
+   <aside class="account">
+      <h1>가나다라마바사</h1>
+   </aside>
+</body>
+</html>
