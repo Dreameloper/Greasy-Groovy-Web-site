@@ -1,0 +1,60 @@
+/*지금 border때문에 픽셀값 조금씩 다르니 조절 할 필요 있음. (대부분 width)*/
+
+* {margin: 0; padding: 0; border: 1px solid black; box-sizing: border-box;}
+
+ /*####################################################################################################*/
+ /*####################################################################################################*/
+ /*####################################################################################################*/
+
+/*기능 구현 상 wrapper해줄 수 없기에 따로 설정*/
+#top {width: 1100px; height: 120px; margin: 0 auto;}
+#top input {border: 8px solid #842de8; width: 300px; height: 50px; background-image: url(../images/icon_search.png); background-size: 30px 30px; background-repeat: no-repeat; background-position: left;}
+/*폰트 연결해야함*/
+#top .logo {height: 120px; color: #842de8; font: bold 66pt "Capsuula"; display: inline-block; margin-left: 40px; background-image: url(../images/logo_bg.png); background-size: cover;}
+      
+/*----------------------------------------------------------------------------------------------------*/
+#gnb ul {width: 100%; height:60px; list-style: none; text-align: center; background-color: #842de8;}
+/*13px+18pt+13px = 44px   ||   li과 p의 width 맞춰줘야 함*/
+#gnb ul>li {display: inline-block; width: 170px; padding: 13px 0; box-sizing: border-box;}
+#gnb ul>li>p {width: 170px; font:18pt "D2coding"; color: #fff; border-right: 3px solid #fff;}
+
+/*effect*/
+#gnb ul li:hover {border-bottom: 3px solid #fff; cursor: pointer;}
+#gnb ul li a {}
+/*----------------------------------------------------------------------------------------------------*/
+#banner {width: 1200px; height: 300px; margin: 0 auto; align-content: center; vertical-align: top;}
+.add_text {display: inline-block; width: 400px; height: 300px;} 
+.add_img {display: inline-block; width: 500px; height: 300px;}
+.mySlides {width: 500px; height: 300px;}
+button {background: none; color: #842de8; font-size: 50px;}
+/*####################################################################################################*/
+/*####################################################################################################*/
+/*####################################################################################################*/
+
+#wrapper {width: 1100px; height: 1800px; margin: 0 auto;}
+#content {width: 670px; display: inline-block; margin-bottom: 100px;}
+.item {width: 220px; height: 330px; float: left;}
+.item:after {display: block; content: ""; clear: both;}
+
+/*현재 margin 중 top이 안먹히는 이유 모름*/
+.more {margin: 20px 0; clear: both;}
+/*----------------------------------------------------------------------------------------------------*/
+#chart {float: right; width: 270px; height: 1000px;}
+#chart:after {display: inline-block; clear: both; content: "";}
+.chart_title {}
+#chart ul {list-style: none;}
+/*----------------------------------------------------------------------------------------------------*/
+footer {height: 200px; position: relative;}
+/*임시로 크기 지정*/
+footer>div {display: inline-block; width: 350px; height: 180px;}
+footer img {width: 70px; height: 70px;}
+.fbook {position: absolute; top: -35px; right: 300px;}
+.insta {position: absolute; top: -35px; right: 200px;}
+.kakao {position: absolute; top: -35px; right: 100px;}
+      
+/*####################################################################################################*/
+/*####################################################################################################*/
+/*####################################################################################################*/
+
+/*웹 페이지 반까지는 가능한데 반 이상으로 쭐이면 적응형 필요함.*/
+aside {position: fixed; right: 8%;top: 40%; display: inline-block; width:400px; height: 450px;}
