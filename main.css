@@ -10,28 +10,42 @@
 #top {width: 1100px; height: 120px; margin: 0 auto;}
 #top input {border: 8px solid #842de8; width: 300px; height: 50px; background-image: url(../images/icon_search.png); background-size: 30px 30px; background-repeat: no-repeat; background-position: left;}
 /*폰트 연결해야함*/
-#top .logo {height: 120px; color: #842de8; font: bold 66pt "Capsuula"; display: inline-block; margin-left: 40px; background-image: url(../images/logo_bg.png); background-size: cover;}
+#top .logo {text-align: center; padding-top: 7px; width: 400px; height: 120px; color: #842de8; font: bold 50pt "Capsuula"; display: inline-block; margin-left: 40px; background-image: url(../images/logo_bg.png); background-size: cover;}
       
 /*----------------------------------------------------------------------------------------------------*/
-#gnb ul {width: 100%; height:60px; list-style: none; text-align: center; background-color: #842de8;}
+#gnb ul {width: 100%; height:50px; list-style: none; text-align: center; background-color: #842de8;}
 /*13px+18pt+13px = 44px   ||   li과 p의 width 맞춰줘야 함*/
-#gnb ul>li {display: inline-block; width: 170px; padding: 13px 0; box-sizing: border-box;}
-#gnb ul>li>p {width: 170px; font:18pt "D2coding"; color: #fff; border-right: 3px solid #fff;}
+#gnb ul>li {display: inline-block; width: 120px; padding: 13px 0; box-sizing: border-box;}
+#gnb ul>li>p {width: 120px; font:14pt "D2coding"; color: #fff; border-right: 3px solid #fff;}
 
 /*effect*/
 #gnb ul li:hover {border-bottom: 3px solid #fff; cursor: pointer;}
 #gnb ul li a {}
 /*----------------------------------------------------------------------------------------------------*/
-#banner {width: 1200px; height: 300px; margin: 0 auto; align-content: center; vertical-align: top;}
-.add_text {display: inline-block; width: 400px; height: 300px;} 
-.add_img {display: inline-block; width: 500px; height: 300px;}
-.mySlides {width: 500px; height: 300px;}
+#banner {width: 1200px; height: 500px; margin: 0 auto; text-align: center; vertical-align: top;}
+.add_centered {width:1200px; display: inline-block; margin: 0 auto; position: relative;}
+
+.add_text {padding: 10px; display: inline-block; width: 300px; height: 450px; vertical-align: top; background-color: #ccc;} 
+.add_text>h1 {padding: 5px; font-family: bold 10px "D2coding"; color: #842de8; text-align: left;}
+.add_text h2 {padding: 5px; font-family: bold 12px "D2coding"; color: black; text-align: justify;}
+.add_text p {padding: 5px; height: 150px; font-family: bold 20px "D2coding"; color: black; text-align: justify; text-overflow: ellipsis; overflow: hidden;}  /*ellipsis적용 왜 안되지??*/
+
+.add_img {display: inline-block; width: 800px; height: 450px;}
+.mySlides {width: 800px; height: 450px;}
+
 button {background: none; color: #842de8; font-size: 50px;}
+.btn_slider_left {position: absolute; top: 200px; left: 10px;}
+.btn_slider_right {position: absolute; top: 200px; right: 10px;}
+.btn_indicators {width: 260px; margin: 0 auto;}
+.btn_indicator {width: 20px; height: 20px; border-radius: 20px; margin: 0 20px;}
+.colored {width: 20px; height: 20px; border-radius: 20px; margin: 0 20px; background-color: #842de8;}
+
+
 /*####################################################################################################*/
 /*####################################################################################################*/
 /*####################################################################################################*/
 
-#wrapper {width: 1100px; height: 1800px; margin: 0 auto;}
+#wrapper {width: 1100px; margin: 0 auto;}
 #content {width: 670px; display: inline-block; margin-bottom: 100px;}
 .item {width: 220px; height: 330px; float: left;}
 .item:after {display: block; content: ""; clear: both;}
@@ -47,7 +61,7 @@ button {background: none; color: #842de8; font-size: 50px;}
 footer {height: 200px; position: relative;}
 /*임시로 크기 지정*/
 footer>div {display: inline-block; width: 350px; height: 180px;}
-footer img {width: 70px; height: 70px;}
+footer img {width: 70px; height: 70px; border-radius: 70px;}
 .fbook {position: absolute; top: -35px; right: 300px;}
 .insta {position: absolute; top: -35px; right: 200px;}
 .kakao {position: absolute; top: -35px; right: 100px;}
@@ -57,4 +71,4 @@ footer img {width: 70px; height: 70px;}
 /*####################################################################################################*/
 
 /*웹 페이지 반까지는 가능한데 반 이상으로 쭐이면 적응형 필요함.*/
-aside {position: fixed; right: 8%;top: 40%; display: inline-block; width:400px; height: 450px;}
+aside {position: fixed; right: 8%; top: 48%; display: inline-block; width:400px; height: 450px; z-index: 99999;}
