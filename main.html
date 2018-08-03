@@ -8,9 +8,6 @@
    
 </head>
 <body>
-   <script type="text/javascript" src="js/slider.js"></script>
-  
-  
    <header>
       <!--검색창과 로고와 광고를 포함-->
       <div id="top">
@@ -33,17 +30,39 @@
       
       <!--광고 상단 배너 부분-->
       <div id="banner">
-         <button class="button_slider_left" onclick="plusDivs(-1);">&#10094;</button>
-         <div class="add_text">가나다라마바사</div>
-         <!--js로 만들어서 보관할 필요 있음. 유지보수-->
-         <div class="add_img">
-            <img class="mySlides" src="./images/banner_jorjasmith1.PNG">
-            <img class="mySlides" src="./images/banner_koreanjazz.PNG">
-            <img class="mySlides" src="./images/banner_morganlee.PNG">
-            <img class="mySlides" src="./images/banner_Official.PNG">
+         <div class="add_centered">
+
+            <button class="btn_slider_left" onclick="plusDivs(-1);">&#10094;</button>
+            <div class="add_text">
+               <h1 class="add_title">공연정보</h1>
+               <h2><a href="#">가나다라마바사</a></h2>
+               <p>가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마</p>
+               <h1>관련 제품</h1>
+               <div class="relative_product">
+                  관련 제품 정보 + 이미지
+               </div>
+               
+            </div>
+            <!--js로 만들어서 보관할 필요 있음. 유지보수-->
+            <div class="add_img">
+               <img class="mySlides" src="./images/banner_jorjasmith1.PNG">
+               <img class="mySlides" src="./images/banner_koreanjazz.PNG">
+               <img class="mySlides" src="./images/banner_morganlee.PNG">
+               <img class="mySlides" src="./images/banner_Official.PNG">
+
+            </div>
+            <button class="btn_slider_right" onclick="plusDivs(+1);">&#10095;</button>
+            <div class="btn_indicators">
+               <button class="btn_indicator" onclick="currentDiv(1)"></button>
+               <button class="btn_indicator" onclick="currentDiv(2)"></button>
+               <button class="btn_indicator" onclick="currentDiv(3)"></button>
+               <button class="btn_indicator" onclick="currentDiv(4)"></button>
+            </div>
          </div>
-         <button class="button_slider_right" onclick="plusDivs(+1);">&#10095;</button>
       </div>
+
+      <!--이미지 슬라이더 js-->
+      <script type="text/javascript" src="js/slider.js"></script>
    </header>
    
    <!--판매정보, 차트, footer-->
@@ -88,9 +107,9 @@
       
       <!--footer-->
       <footer>
-         <img class="fbook" src="./images/icon_facebook.png" alt="facebook">
-         <img class="insta" src="./images/icon_instagram.png" alt="instagram">
-         <img class="kakao" src="./images/icon_kakao.png" alt="kakaoplus">
+         <a href="#"><img class="fbook" src="./images/icon_facebook.png" alt="facebook"></a>
+         <a href="#"><img class="insta" src="./images/icon_instagram.png" alt="instagram"></a>
+         <a href="#"><img class="kakao" src="./images/icon_kakao.png" alt="kakaoplus"></a>
          <div></div>
          <div></div>
          <div></div>
@@ -101,5 +120,6 @@
    <aside class="account">
       <h1>가나다라마바사</h1>
    </aside>
+
 </body>
 </html>
