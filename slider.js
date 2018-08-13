@@ -1,10 +1,6 @@
 var slideIndex = 1;
 showDivs(slideIndex);         
-/*
-해당 함수는 현재 showDivs(1); 이다.
-따라서 , if 문에서 x.length = 0 으로 출력되므로.
-1>0 인 조건인 첫번째 if문 
-*/
+
 function plusDivs(n) {
    showDivs(slideIndex += n);
 }
@@ -29,10 +25,6 @@ function showDivs(n) {
       dots[i].className = dots[i].className.replace(" colored", "");    //~를, ~로 바꾸겠다.
       console.log(dots[i]);
    }
-   console.log(dots);
    x[slideIndex - 1].style.display = "block";       //얘만 보이겠다.
-   dots[slideIndex - 1].className = " colored";     //이름하나 바꿨다고 배열에서 빠지나??
-   console.log(dots);
-   console.log(dots[slideIndex - 1]);
-   console.log(dots[slideIndex - 1].className);
+   dots[slideIndex - 1].className += " colored";
 }
